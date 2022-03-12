@@ -28,7 +28,7 @@
     --card-border-radius: 2rem;
     --btn-padding: 0.6rem 1rem;
     --search-padding: 0.6rem 1rem;
-    --card-padding: 0;
+    --card-padding: 0.3rem;
 
     --sticky-top-left: 5.4rem;
     --sticky-top-right: -18rem;
@@ -310,6 +310,27 @@ main .container .left .profile{
     overflow: hidden;
 }
 
+.middle .stories .story ::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5rem;
+    background: linear-gradient(transparent, 0,0,0,00.75);
+    position: absolute;
+    bottom: 0;
+}
+
+.middle .stories .story .name{
+    z-index: 2;
+}
+
+.middle .story .profile-photo{
+    height: 2rem;
+    width: 2rem;
+    align-items: center;
+    border: 3px solid var(--color-primary);
+}
+
 .middle .stories .story:nth-child(1){
     background: url(../images/story-1.jpg)
     no-repeat center center/cover;
@@ -343,6 +364,18 @@ main .container .left .profile{
     no-repeat center center/cover;
 }
 
+/* =================CREATE POST================== */
+
+.middle .create-post{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 1rem;
+    background: var(--color-white);
+    border-radius: var(--border-radius);
+    padding: 0.4rem var(--card-padding);
+}
 
 
 
